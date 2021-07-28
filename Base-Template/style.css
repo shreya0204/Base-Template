@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+/* HEADER */
+.top{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #334257;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    cursor: pointer;
+}
+
+ul>li{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+    margin:20px    
+}
+
+.contact{
+    margin-left: auto;
+}
+
+
+
+/* CONTENT */
+
+.content{
+    display: flex;
+    /* position: relative; */
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 90vh;  
+    align-items: flex-end; 
+    justify-content: center;
+}
+
+
+.main-text{
+    position: absolute;
+    text-align: center;
+    font-size: 60px;
+    top: 8rem;
+    right: 40rem;
+    color:#1B2830;
+
+}
+.image{
+    width: 80%;
+    height: 100%;
+}
+
+/* CARDS */
+
+.cards-div{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns:repeat(auto-fill, minmax(250px,1fr));
+    background-color: #C2D9FF;
+}
+.card{
+    background-color: #1B2830;
+    padding: 36px;
+    margin: 40px;
+}
+.card>img{
+    width: 100%;
+}
+
+@media screen and (max-width: 769px) {
+    .card{
+        display: flex;
+        background-color: #1B2830;
+        padding: 20px;
+        margin: 40px;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        margin: auto ;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .card>img{
+        width: 40%;
+        align-self: center;
+    }
+    ul>li{
+        margin:5px;
+        padding: 5px;
+    }
+    .image{
+        width: 100%;
+        height: 70%;
+        margin-left: -100px;
+    }
+
+    .main-text{
+        font-size: 40px;
+        top: 6rem;
+        right: 8rem;
+    
+    }
+}
+
+/* FOOTER */
+
+.foot{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #334257;
+}
+
+h2{
+    color: white;
+}
+
